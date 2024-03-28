@@ -1,8 +1,8 @@
 <div class="id-block">
   <div class="info">
     <div class="texts">
-      <div class="name">Minerva McConagall</div>
-      <div class="desc">Transfiguration teacher and head of Gryffindor</div>
+      <div class="name">{{dataBlock.firstName}} {{dataBlock.lastName}}</div>
+      <div class="desc">{{dataBlock.description}}</div>
     </div>
     <div class="date">
       <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,10 +15,12 @@
         </clipPath>
         </defs>
       </svg>
-      <span>08.09.1956</span>
+      <span *ngIf="dataBlock.isTeacher">{{dottedDate(dataBlock.arrivalDate)}}</span>
+      <span *ngIf="!dataBlock.isTeacher">{{year(dataBlock.arrivalDate)}}</span>
     </div>
   </div>
   <div class="status">
-    <div>Transfiguration</div>
+    <div *ngIf="dataBlock.isTeacher" [class]="dataBlock.assignment">{{dataBlock.assignment}}</div>
+    <div *ngIf="!dataBlock.isTeacher" [class]="dataBlock.house">{{dataBlock.house}}</div>
   </div>
 </div>
