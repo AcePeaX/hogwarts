@@ -1,11 +1,11 @@
 export class IdBlock{
-  constructor(id:number,
+  constructor(public id:number,
     public firstName: string,
-    public lasttName: string,
+    public lastName: string,
     public description: string,
-    public arrivalDate: Date,
+    public arrivalDate: string,
     public house: string,
-    public assignment:string,
-    public isTeacher:boolean) {
+    public isTeacher:boolean,
+    public assignment?:string,) {
 }
 }

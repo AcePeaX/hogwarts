@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IdBlock } from '../models/id-block.model';
 
 @Component({
   selector: 'app-identity-block',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './identity-block.component.scss'
 })
 export class IdentityBlockComponent {
-
+  @Input() faceSnap!: IdBlock;
 }
