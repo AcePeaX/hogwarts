@@ -30,7 +30,6 @@
         },
         "@schematics/angular:service": {
           "skipTests": true
-          "style": "scss"
         }
       },
       "root": "",
