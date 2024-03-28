@@ -8,18 +8,13 @@
   <div class="column">
     <div class="label">Teachers</div>
     <div class="content">
-      <app-identity-block/>
-      <app-identity-block/>
-      <app-identity-block/>
+      <app-identity-block *ngFor="let block of teachers" [dataBlock]="block" />
     </div>
   </div>
   <div class="column">
     <div class="label">Students</div>
     <div class="content content-large">
-      <app-identity-block/>
-      <app-identity-block/>
-      <app-identity-block/>
-      <app-identity-block/>
+      <app-identity-block *ngFor="let block of students" [dataBlock]="block" />
     </div>
   </div>
 </div>
