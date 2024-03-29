@@ -1,9 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-  padding: 40px;
-  padding-right: 0;
+  padding: min(40px , 5vw);
   background: rgba(252, 252, 252, 1);
+
+
+  @media screen and (min-width: 820px) {
+    padding-right: 0;
+  }
 }
 
 /*.main-content .content-large {
