@@ -13,7 +13,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 All the code is in the `src` folder.
 
-There you can find the `index.html` file and the `style.scss` file for global styling. You can also find `data.ts` that exports the data array (array of teachers and students information).
+There you can find the `index.html` file and the `style.scss` file for global styling. You can also find `data.ts` that exports the data array (array of teachers and students information on a JSON format).
 
 In the `app` subfolder, you can find the main component (HTML,TS,SCSS) and also the `identity-block` component for displaying the person's information.
 There is also an `IdBlock` model in the `model` subfolder for typescript typing.
